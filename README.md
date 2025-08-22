@@ -49,25 +49,25 @@ https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=gr
 ## Steps to Run the Script
 - Open PowerShell as Administrator.
 - Install the Microsoft.Graph Module:
-```
+```powershell
 Install-Module -Name Microsoft.Graph -Scope CurrentUser
 ```
 - Copy the script to directory you prefer.
 - Navigate to the directory where the script is saved:
-```
+```powershell
 cd "C:\path\to\your\script\directory"
 ```
 - Execute the script with browser authentication:
-```
+```powershell
 .\Import_AzureAD.ps1
 ```
 - Execute the script with service principal authentication:
-```
+```powershell
 .\Import_AzureAD.ps1 -tenantId "your-tenant-id" -clientId "your-client-id" -clientSecret "your-client-secret"
 ```
 
 - In case you will receive a message like “.ps1 is not digitally signed. The script will not execute on the system.” , run:
-```
+```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 >This command sets the execution policy to bypass for only the current PowerShell session after the window is closed, the next PowerShell session will open running with the default execution policy. “Bypass” means nothing is blocked and no warnings, prompts, or messages will be displayed.
