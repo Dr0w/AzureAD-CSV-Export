@@ -17,7 +17,7 @@ Click Add and copy the client secret value. You won’t be able to see it again.
 3. Assign API Permissions:
 Go to API permissions.
 Click Add a permission > Microsoft Graph > Application permissions.
-Add the necessary permissions like User.Read.All, Group.Read.All, and Directory.Read.All.
+Add the necessary permission Directory.Read.All.
 Click Add permissions and then Grant admin consent for your tenant.
 4. Note the Tenant ID and Client ID:
 In the app registration, copy the Application (client) ID and Directory (tenant) ID.
@@ -45,6 +45,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472
 https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0
 
 ## Azure App configured for Service Principal Authentication
+- tenantId, clientId, clientSecret - are ready
 
 ## Steps to Run the Script
 - Open PowerShell as Administrator.
